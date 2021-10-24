@@ -162,7 +162,8 @@ article:hover{
     margin-bottom: 0;
     z-index: 100;
     opacity: 1;
-    background-color: rgba(255, 251, 251,.7);   
+    background-color: rgba(255, 251, 251,.7);
+    cursor: pointer;   
 }
 article:nth-child(1):hover{
     height: auto;
@@ -283,6 +284,7 @@ article .position {
     border-bottom: 1px solid white;
     background-color: rgb(44, 42, 42);
     border-radius: 10px 10px 0 0;
+    height: 10%;
 }
 .regis-header img{
     transform: rotate(180deg);
@@ -308,10 +310,41 @@ article .position {
 }
 
 .regis-body {
-    padding: 5px 0px;
     font-weight: 600;
     color: rgb(255, 255, 255);
+    height: 90%;
 }
+.regis-body .poster {
+    max-width: 50%;
+    width: 50%;
+    float: left;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+.poster img {
+    display: inline-block;
+    vertical-align: middle;
+    height: 80%;
+    width: auto;
+    margin: 9%;
+    border: 5px solid rgb(255, 255, 255);
+    box-shadow: 0 0 10px -.8px rgb(34, 162, 194);
+}
+.form-body {
+    height: 100%;
+    max-width: 50%;
+    width: 50%;
+    float: right;
+}
+.form-body .form {
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    background-color: blue;
+}
+
+
 #overlay {
     position: fixed;
     opacity: 0;
@@ -320,9 +353,11 @@ article .position {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgb(247, 247, 247);
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 50%);
     pointer-events: none;
     z-index: 5;
+    overflow: hidden;
 }
 
 #overlay.active {
