@@ -403,7 +403,7 @@ footer a{
     height: 100%;
     width: 80%;
     margin: auto;
-    padding: 40px;
+    padding: 20px;
 }
 
 .form-body h1 {
@@ -472,4 +472,11 @@ footer a{
 }
 .form-body .signup span:hover{
     color: #845ec2;
+}
+.user .prove {
+    margin-top: -10px;
+    margin-bottom: 10px;
+    color: #58493f;
+    font-size: 14px;
+    padding-left: 5px;
 }

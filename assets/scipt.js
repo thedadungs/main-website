@@ -2,7 +2,15 @@ const openRegisterButtons = document.querySelectorAll('[data-register-open]')
 const closeProjectButtons = document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')
 const body = document.getElementById('body')
+const phone  = document.getElementById('phone')
 
+function onlyNumber(evt) {
+  var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+        if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+            return false;
+        else
+            return true;
+}
 
 function openPopUp(x) {
   if (x == null) return
