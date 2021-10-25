@@ -1,19 +1,23 @@
 const openRegisterButtons = document.querySelectorAll('[data-register-open]')
 const closeProjectButtons = document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')
+const body = document.getElementById('body')
 
 
 function openPopUp(x) {
   if (x == null) return
   x.classList.add('active')
   overlay.classList.add('active')
+  body.classList.add('active')
 }
 
 function closePopUp(x) {
   if (x == null) return
   x.classList.remove('active')
   overlay.classList.remove('active')
+  body.classList.remove('active')
 }
+
 openRegisterButtons.forEach(button => {
   button.addEventListener('click', () => {
     const regis = document.querySelector(button.dataset.registerOpen)
