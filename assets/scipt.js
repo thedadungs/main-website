@@ -3,7 +3,10 @@ const closeProjectButtons = document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')
 const body = document.getElementById('body')
 const phone  = document.getElementById('phone')
+var header = document.getElementById("header");
+var sticky = header.offsetTop;
 
+// function
 function onlyNumber(evt) {
   var ASCIICode = (evt.which) ? evt.which : evt.keyCode
         if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
@@ -25,6 +28,13 @@ function closePopUp(x) {
   overlay.classList.remove('active')
   body.classList.remove('active')
 }
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+} 
 
 openRegisterButtons.forEach(button => {
   button.addEventListener('click', () => {
@@ -47,3 +57,5 @@ overlay.addEventListener('click', () => {
   })
 })
 
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
