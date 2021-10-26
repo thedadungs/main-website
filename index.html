@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- title bar -->
         <title>The Dadungs</title>
         <link rel="shortcut icon" href="assets/Logo.ico" />
+        <!-- meta file -->
+        <meta name="viewport" content="width-device-width, initial-scale = 1.0">
         <meta charset="UTF-8">
+        <!-- import file -->
         <link rel="stylesheet" href="assets/style.css">
         <link rel="stylesheet" href="assets/responsive.css">
         <script defer src="assets/scipt.js"></script>
-        <meta name="viewport" content="width-device-width, initial-scale = 1.0">
         <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     </head>
     <body id="body">
         <header id="header">
+            <!-- left header -->
             <div class="left-header">    
                 <img src="assets/Logo.png" height="40px">
                 <h4>THE DADUNGS</h4>
             </div>
+            <!-- right header -->
             <div class="right-header">
                 <li><a onfocus="this.blur();" href="#body">HOME</a></li>
                 <li><a onfocus="this.blur();" href="#information">INFORMATION</a></li>
@@ -24,7 +29,9 @@
                 <li><button data-register-open="#regis">REGISTER</button></li>
             </div>
         </header>
+        <!-- homepage -->
         <div class="container">
+            <!-- home text -->
             <div class="title">
                 <h1>THE DADUNGS</h1>
                 <p>"Excellence in education is when we do everything that we can<br> to make sure they become everything that they can"<br>
@@ -33,16 +40,21 @@
             </div>           
             <div class="sticker"><img src="assets/sticker.png"></div>
         </div>
+        <!-- Registration form page -->
         <div class="regis" id="regis">
+            <!-- Registration header -->
             <div class="regis-header">
                 <img src="assets/Logo.png" height="30px">
                 <div class="title">Event Registration</div>
                 <button data-close-button class="close-button">&times;</button>
             </div>
+            <!-- Registration body -->
             <div class="regis-body">
+                <!-- left side body -->
                 <div class="poster">
                     <img src="assets/1.png">
                 </div>
+                <!-- formulir / right side body -->
                 <div class="form-body">
                     <div class="form">
                         <h1>Register</h1>
@@ -56,13 +68,14 @@
                             <i class="fas fa-phone-square-alt"id="fas" ></i>
                             <input type="number" maxlength="4" name="phone" id="phone" onkeypress="return onlyNumber(event)"  placeholder="No HP"/>
                             <div class="prove">Metode Pembayaran</div>
+                            <!-- option select -->
                             <select name="payment" id="payment" >
                                 <option value="blank" ></option>
                                 <option value="ovo">OVO</option>
                                 <option value="gopay">Gopay</option>
                                 <option value="bri">Bank Bri</option>
                                 <option value="bca">Bank Bca</option>
-                              </select>
+                            </select>
                             <div class="prove">Bukti Transfer</div>
                             <i class="fas fa-file-alt"id="fas"></i>
                             <input type="file" name="filename" id="file" placeholder="image"/>
@@ -75,6 +88,7 @@
             </div>
         </div>
         <div id="overlay"></div>
+        <!-- event placement -->
         <div class="information" id="information">
             <div class="upcoming">
                 <div class="event">
@@ -86,12 +100,14 @@
             </div>
             <div class="latest"></div>
         </div>
+        <!-- member information & footer-->
         <div class="member" id="member">
             <div class="head">
                 <h3>MEMBER</h3>
             </div>
             <section >
                 <div class="grid">
+                    <!-- aranza -->
                     <article class="article">
                         <div class="box">
                             <img src="assets/photo/aranza.png" height="200px">
@@ -102,6 +118,7 @@
                             </div>
                         </div>
                     </article>
+                    <!-- dzaki -->
                     <article class="article">
                         <div class="box">
                         <img src="assets/photo/dzaki.png" height="200px">
@@ -112,6 +129,7 @@
                         </div>
                         </div>
                     </article >
+                    <!-- danu -->
                     <article class="article">
                         <img src="assets/photo/danu.png" height="200px">
                         <div class="text">
@@ -120,6 +138,7 @@
                             <p>Informatics at<br> Telkom University</p>
                         </div>
                     </article>
+                    <!-- tegar -->
                     <article class="article">
                         <img src="assets/photo/tegar.png" height="200px">
                         <div class="text">
@@ -128,6 +147,7 @@
                             <p>Cadastral Measurement and Mapping at STPN</p>
                         </div>
                     </article>
+                    <!-- rahman -->
                     <article class="article">
                         <img src="assets/photo/rahman.png" height="200px">
                         <div class="text">
@@ -136,6 +156,7 @@
                             <p>Mathematics Education at<br> Sriwijaya University</p>
                         </div>
                     </article>
+                    <!-- ridho -->
                     <article class="article">
                         <img src="assets/photo/ridho.png" height="200px">
                         <div class="text">
@@ -144,6 +165,7 @@
                             <p>Mining Engineering at<br> UPN "Veteran" Yogyakarta</p>
                         </div>
                     </article>
+                    <!-- dea -->
                     <article class="article">
                         <img src="assets/photo/dea.png" height="200px">
                         <div class="text">
@@ -153,6 +175,7 @@
                         </div>
                         
                     </article>
+                    <!-- bima -->
                     <article class="article">
                         <img src="assets/photo/bima.png" height="200px">
                         <div class="text">
@@ -161,6 +184,7 @@
                             <p>Freelancer</p>
                         </div>
                     </article>
+                    <!-- ney -->
                     <article class="article">
                         <img src="assets/photo/ney.png" height="200px">
                             <div class="text">
@@ -171,11 +195,10 @@
                     </article>
                 </div>
             </section>
+            <!-- footer inside member page -->
             <footer>
                 <p><a onfocus="this.blur();" href="https://www.instagram.com/ddadungs">&copy 2021 THE DADUNGS</a> </p>
             </footer>
         </div>
-
-
     </body>
 </html>

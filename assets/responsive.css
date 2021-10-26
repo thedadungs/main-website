@@ -1,35 +1,8 @@
 /* phone */
-/* ipad pro */
-@media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1366px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-    .regis-body .poster {
-        max-width: 50%;
-        width: 50%;
-        float: left;
-        height: 100%;
-        text-align: center;
-        position: relative;
-    }
-    .poster img {
-        display: inline-block;
-        vertical-align: middle;
-        height: 80%;
-        width: auto;
-        margin: 9%;
-        border: 5px solid rgb(255, 255, 255);
-        box-shadow: 0 0 10px -.8px rgb(34, 162, 194);
-    }
-    .regis {
-        height: 70%;
-    }
-}
 /* ipad mini */
 @media only screen 
   and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
+  and (max-device-width: 1150px) 
   and (-webkit-min-device-pixel-ratio: 1) {
     header {
         justify-content: space-between;
@@ -121,15 +94,7 @@
         max-width: 100%;
         width: 100%;
         float: none;
-        font-family: "Monserrat", sans-serif;
-        font-size: 16px;
         margin-top: 25px;
-    }
-    .form-body .form {
-        height: 100%;
-        width: 80%;
-        margin: auto;
-        padding: 20px;
     }
     .login-btn {
         margin-top: 50px;
@@ -151,9 +116,8 @@
 @media only screen 
   and (min-device-width: 575px) 
   and (max-device-width: 875px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
+  and (-webkit-min-device-pixel-ratio: 1) { 
     header {
-        justify-content: space-between;
         padding: 0 0;
         height: 80px;
     }
@@ -188,38 +152,21 @@
         top: 130vh;
     }
     .grid {
-        display: grid;
         grid-template-columns: [first] 150px [line2] 150px 150px [end];;
         grid-template-rows: [row1-start] 300px [row1-end] 300px [third-line] 300px [last-line];
         justify-content: center;
     }
     section {
         width: 90%;
-        margin: 0 auto;
-        padding-bottom: 50px;
     }
     article {
         border-radius: 25px;
         width: 150px;
         height: 150px;
-        box-shadow: 0px 0px 50px 0px #000000;
-        color: rgba(0, 0, 0, 0);
-        align-items: center;
-        margin-bottom: 210px;
     }
     article img {
         height: 150px;
     }
-    article .text {
-        text-align: center;
-        transform: scale(0);
-        transition: 1ms step-end;
-    }
-    .text.active {
-        transform: scale(1);
-        transition: 1ms step-start;
-    }
-    
     article p {
         font-size: 13px;
         padding: 0 5px 20px 5px;
@@ -232,7 +179,6 @@
         font-size: 15px;
         font-weight: 800;
     }
-
     .regis-body .poster {
         display: none;
     }
@@ -241,15 +187,7 @@
         max-width: 100%;
         width: 100%;
         float: none;
-        font-family: "Monserrat", sans-serif;
-        font-size: 16px;
         margin-top: 25px;
-    }
-    .form-body .form {
-        height: 100%;
-        width: 80%;
-        margin: auto;
-        padding: 20px;
     }
     .login-btn {
         margin-top: 50px;
@@ -258,7 +196,6 @@
         width: 100%;
         margin-bottom: 25px;
     }
-
     .prove {
         margin-top: 0px;
         margin-bottom: 20px;
@@ -274,7 +211,6 @@ and (min-device-width: 400px)
 and (max-device-width: 575px) 
 and (-webkit-min-device-pixel-ratio: 1) {
     header {
-        justify-content: space-between;
         padding: 0 0;
         height: 80px;
     }
@@ -310,19 +246,15 @@ and (-webkit-min-device-pixel-ratio: 1) {
         top: 130vh;
     }
     .grid {
-        display: grid;
         grid-template-columns: [first] 80px [line2] 80px 80px [end];;
-        grid-template-rows: [row1-start] 250px [row1-end] 250px [third-line] 250px [last-line];
+        grid-template-rows: [row1-start] 235px [row1-end] 235px [third-line] 235px [last-line];
         justify-content: center;
     }
     article {
         border-radius: 25px;
         width: 100px;
         height: 100px;
-        box-shadow: 0px 0px 50px 0px #000000;
-        color: rgba(0, 0, 0, 0);
-        align-items: center;
-        margin-bottom: 210px;
+
     }
     article img {
         height: 100px;
@@ -347,16 +279,9 @@ and (-webkit-min-device-pixel-ratio: 1) {
         max-width: 100%;
         width: 100%;
         float: none;
-        font-family: "Monserrat", sans-serif;
-        font-size: 16px;
         margin-top: 25px;
     }
-    .form-body .form {
-        height: 100%;
-        width: 80%;
-        margin: auto;
-        padding: 20px;
-    }
+
     .login-btn {
         margin-top: 50px;
     }
@@ -364,7 +289,6 @@ and (-webkit-min-device-pixel-ratio: 1) {
         width: 100%;
         margin-bottom: 25px;
     }
-
     .prove {
         margin-top: 0px;
         margin-bottom: 20px;
@@ -380,7 +304,6 @@ and (-webkit-min-device-pixel-ratio: 1) {
 and (min-device-width: 300px)
 and (max-device-width: 400px) {
     header {
-        justify-content: space-between;
         padding: 0 0;
         height: 80px;
     }
@@ -394,12 +317,10 @@ and (max-device-width: 400px) {
     .left-header img{
         height: 35px;
     }
-    .right-header li button{
-        font-size: 10px;
-    }
     .right-header li button {
         border-radius:100px;
         padding:5px 10px;
+        font-size: 10px;
     }
     .right-header a{
         display: none;
@@ -434,10 +355,8 @@ and (max-device-width: 400px) {
         margin: 0 0;
     }
     .grid {
-        display: grid;
         grid-template-columns: [first] 35px [line2] 35px 35px [end];
         grid-template-rows: [row1-start] 200px [row1-end] 200px [third-line] 200px [last-line];
-        justify-content: center;
     }
     article {
         border-radius: 25px;
@@ -471,16 +390,8 @@ and (max-device-width: 400px) {
         max-width: 100%;
         width: 100%;
         float: none;
-        font-family: "Monserrat", sans-serif;
-        font-size: 16px;
-        margin-top: 25px;
     }
-    .form-body .form {
-        height: 100%;
-        width: 80%;
-        margin: auto;
-        padding: 20px;
-    }
+
     .login-btn {
         margin-top: 50px;
     }
@@ -500,7 +411,6 @@ and (max-device-width: 400px) {
 }
 @media( max-device-width:300px ){
     header {
-        justify-content: space-between;
         padding: 0 0;
         height: 80px;
     }
@@ -514,12 +424,10 @@ and (max-device-width: 400px) {
     .left-header img{
         height: 35px;
     }
-    .right-header li button{
-        font-size: 10px;
-    }
     .right-header li button {
         border-radius:100px;
         padding:5px 10px;
+        font-size: 10px;
     }
     .right-header a{
         display: none;
@@ -552,21 +460,15 @@ and (max-device-width: 400px) {
     section{
         width: 80%;
         margin-right: 35%;
-
     }
     .grid {
-        display: grid;
         grid-template-columns: 10px ;
         grid-template-rows:  200px 200px 200px 200px 200px 200px 200px 200px 200px;
-        justify-content: center;
     }
     article {
         border-radius: 25px;
         width: 80px;
         height: 80px;
-        box-shadow: 0px 0px 50px 0px #000000;
-        color: rgba(0, 0, 0, 0);
-        align-items: center;
         margin-bottom: 210px;
     }
     article img {
@@ -592,7 +494,6 @@ and (max-device-width: 400px) {
         max-width: 100%;
         width: 100%;
         float: none;
-        font-family: "Monserrat", sans-serif;
         font-size: 16px;
         margin-top: 25px;
     }
@@ -609,7 +510,6 @@ and (max-device-width: 400px) {
         width: 100%;
         margin-bottom: 25px;
     }
-
     .prove {
         margin-top: 0px;
         margin-bottom: 20px;
