@@ -76,7 +76,14 @@ closeProjectButtons.forEach(button => {
     closePopUp(regis)
   })
 })
-
+document.addEventListener('keydown', function(event){
+	if(event.key === "Escape"){
+    const regiss = document.querySelectorAll('.regis.active')
+    regiss.forEach(project => {
+      closePopUp(project)
+    })
+	}
+});
 overlay.addEventListener('click', () => {
   const regiss = document.querySelectorAll('.regis.active')
   regiss.forEach(project => {
