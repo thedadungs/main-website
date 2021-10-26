@@ -5,7 +5,6 @@
     font-family: sans-serif;
     scroll-behavior: smooth;
 }
-
 header {
     height: 60px;
     display: flex;
@@ -132,42 +131,41 @@ body.active {
     width: 100%;
     text-align: center;
     padding-bottom: 20px;
+    padding-top: 10px;
 }
 .member .head {
     font-size: 18px;
     border-bottom: 1px solid white;
     width: 70%;
-    margin: 0 auto;
-    margin-top: 60px;
-    margin-bottom: -50px;
+    margin: 50px auto 0 auto;
     color: rgb(0, 0, 0);
-    padding-bottom: 15px;
+    margin-bottom: 75px;
+    padding-bottom: 20px;
 }
 section {
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     padding-bottom: 50px;
 }
 .grid {
     display: grid;
-    text-align: center;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
-    grid-gap: 100px;
+    grid-template-columns: [first] 250px [line2] 250px [line3] 250px [end];;
+    grid-template-rows: [row1-start] 350px [row1-end] 350px [third-line] 350px [last-line];
     margin-top: 100px;
+    justify-content: space-around;
+    grid-gap: 50px;
 }
 article {
     border-radius: 20px;
     width: 250px;
     height: 210px;
-    margin-left: auto;
-    margin-right: auto;
     box-shadow: 0px 0px 50px 0px #000000;
     color: rgba(0, 0, 0, 0);
-    margin-bottom: 150px;
     opacity: 1;
-    padding: 0px;
     transition: 400ms ease-in-out;
+    position: relative;
+    align-items: center;
+    margin-bottom: 210px;
 }
 
 article img {
@@ -186,8 +184,9 @@ article:hover {
     z-index: 15px;
 }
 .article.active{
-    opacity: .5;
+    opacity: .3;
     transition: 200ms ease-in-out ;
+    
 }
 
 article:nth-child(1):hover{
@@ -231,8 +230,12 @@ article img {
 }
 article .text {
     text-align: center;
-    display: show;
-    transition: .01ms ease-in-out;
+    transform: scale(0);
+    transition: 1ms step-end;
+}
+.text.active {
+    transform: scale(1);
+    transition: 1ms step-start;
 }
 
 article p {
@@ -290,7 +293,6 @@ article .position {
     border-bottom: 1px solid rgb(0, 0, 0);
     width: 70%;
     margin: 0 auto;
-    margin-top: 25px;
     margin-bottom: -25px;
     color: white;
     text-align: center;
@@ -450,6 +452,9 @@ footer a{
     justify-content: center;
 
 }
+#payment {
+    display: flex;
+}
 .form-body input {
     width: 90%;
     margin-bottom: 25px;
@@ -533,4 +538,16 @@ footer a{
 #overlay2.active {
     transform: scale(1);
     pointer-events: all;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }

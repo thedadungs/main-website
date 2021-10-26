@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>The Dadungs</title>
+        <link rel="shortcut icon" href="assets/Logo.ico" />
         <meta charset="UTF-8">
         <link rel="stylesheet" href="assets/style.css">
         <link rel="stylesheet" href="assets/responsive.css">
@@ -17,9 +18,9 @@
                 <h4>THE DADUNGS</h4>
             </div>
             <div class="right-header">
-                <li><a href="#body">HOME</a></li>
-                <li><a href="#information">INFORMATION</a></li>
-                <li><a href="#member">MEMBER</a></li>
+                <li><a onfocus="this.blur();" href="#body">HOME</a></li>
+                <li><a onfocus="this.blur();" href="#information">INFORMATION</a></li>
+                <li><a onfocus="this.blur();" href="#member">MEMBER</a></li>
                 <li><button data-register-open="#regis">REGISTER</button></li>
             </div>
         </header>
@@ -45,18 +46,25 @@
                 <div class="form-body">
                     <div class="form">
                         <h1>Register</h1>
-                        <div class="user">
+                        <div class="user" id="user">
                             <i class="fas fa-user" id="fas"></i>
                             <input type="text" name="username" id="username" placeholder="Nama"/>
                             <i class="fas fa-graduation-cap" id="fas"></i>
                             <input type="text" name="username" id="username" placeholder="Asal Sekolah"/>
                             <i class="fas fa-envelope"id="fas"></i>
                             <input type="text" name="username" id="username" placeholder="Alamat Email"/>
-                            <i class="fas fa-phone-square-alt"id="fas"></i>
-                            <input type="phone" name="phone" id="phone" onkeypress="return onlyNumber(event)" placeholder="No HP"/>
+                            <i class="fas fa-phone-square-alt"id="fas" ></i>
+                            <input type="number" maxlength="4" name="phone" id="phone" onkeypress="return onlyNumber(event)"  placeholder="No HP"/>
                             <div class="prove">Bukti Transfer</div>
                             <i class="fas fa-file-alt"id="fas"></i>
                             <input type="file" name="filename" id="file" placeholder="image"/>
+                            <select name="payment" id="payment" >
+                                <option value="blank" ></option>
+                                <option value="ovo">OVO</option>
+                                <option value="gopay">Gopay</option>
+                                <option value="bri">Bank Bri</option>
+                                <option value="bca">Bank Bca</option>
+                              </select>
                         </div>
                         <div class="login-btn">
                             <button class="btn">Submit</button>
@@ -163,7 +171,7 @@
                 </div>
             </section>
             <footer>
-                <p><a href="https://www.instagram.com/ddadungs">&copy 2021 THE DADUNGS</a> </p>
+                <p><a onfocus="this.blur();" href="https://www.instagram.com/ddadungs">&copy 2021 THE DADUNGS</a> </p>
             </footer>
         </div>
 
