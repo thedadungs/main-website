@@ -59,29 +59,61 @@
                     <div class="form">
                         <h1>Register</h1>
                         <div class="user" id="user">
-                            <i class="fas fa-user" id="fas"></i>
-                            <input type="text" name="username" id="username" placeholder="Nama"/>
-                            <i class="fas fa-graduation-cap" id="fas"></i>
-                            <input type="text" name="username" id="username" placeholder="Asal Sekolah"/>
-                            <i class="fas fa-envelope"id="fas"></i>
-                            <input type="text" name="username" id="username" placeholder="Alamat Email"/>
-                            <i class="fas fa-phone-square-alt"id="fas" ></i>
-                            <input type="number" maxlength="4" name="phone" id="phone" onkeypress="return onlyNumber(event)"  placeholder="No HP"/>
-                            <div class="prove">Metode Pembayaran</div>
-                            <!-- option select -->
-                            <select name="payment" id="payment" >
-                                <option value="blank" ></option>
-                                <option value="ovo">OVO</option>
-                                <option value="gopay">Gopay</option>
-                                <option value="bri">Bank Bri</option>
-                                <option value="bca">Bank Bca</option>
-                            </select>
-                            <div class="prove">Bukti Transfer</div>
-                            <i class="fas fa-file-alt"id="fas"></i>
-                            <input type="file" name="filename" id="file" placeholder="image"/>
-                        </div>
-                        <div class="login-btn">
-                            <button class="btn">Submit</button>
+                            <label class="form-control">
+                                <i class="fas fa-user" id="fas"></i>
+                                <input type="text" name="username" id="username" placeholder="Nama"/>
+                                <div class="error-message">
+                                    <p class="fill-message">Harus diisi</p>
+                                    <p class="wrong-message">$</p>
+                                </div>
+                            </label>
+                            <label class="form-control">
+                                <i class="fas fa-graduation-cap" id="fas"></i>
+                                <input type="text" name="school" id="school" placeholder="Asal Sekolah"/>
+                                <div class="error-message">
+                                    <p class="fill-message">Harus diisi</p>
+                                    <p class="wrong-message">$</p>
+                                </div>
+                            </label>
+                            <label class="form-control">
+                                <i class="fas fa-envelope"id="fas"></i>
+                                <input type="text" name="email" id="email" placeholder="Alamat Email"/>
+                                <div class="error-message">
+                                    <p class="fill-message">Harus diisi</p>
+                                    <p class="wrong-message">Email tidak valid</p>
+                                </div>
+                            </label>
+                            <label class="form-control">
+                                <i class="fas fa-phone-square-alt"id="fas" ></i>
+                                <input type="number" maxlength="4" name="phone" id="phone" onkeypress="return onlyNumber(event)"  placeholder="No HP, ex : 088876543210 "/>
+                                <div class="error-message">
+                                    <p class="fill-message">Harus diisi</p>
+                                    <p class="wrong-message">Nomor tidak valid</p>
+                                </div>
+                            </label>
+                            <label class="form-control" id="metode">
+                                <div class="prove">Metode Pembayaran</div>
+                                <!-- option select -->
+                                <select name="payment" id="payment" >
+                                    <option selected="selected" >-- Pilih Satu --</option>
+                                    <option value="ovo">OVO</option>
+                                    <option value="gopay">Gopay</option>
+                                    <option value="bri">Bank Bri</option>
+                                    <option value="bca">Bank Bca</option>
+                                </select>
+                                <div class="error-message">
+                                    <p class="fill-message">Pilih metode pembayaran</p>
+                                </div>
+                            </label>            
+                            <label class="form-control" id="transfer">
+                                <div class="prove">Bukti Transfer</div>
+                                <input type="file" name="filename" id="bukti" accept="image/gif,image/png, image/jpg, image/jpeg" value="image"/>
+                                <div class="error-message">
+                                    <p class="fill-message">Masukkan bukti pembayaran</p>
+                                    <p class="wrong-message">Masukkan file .jpg .jpeg .png</p>
+                                </div>
+                            </label>  
+                            <button class="submit" id="submit">Submit</button>  
                         </div>
                     </div>
                 </div>

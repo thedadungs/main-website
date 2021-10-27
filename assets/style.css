@@ -5,6 +5,7 @@
     font-family: sans-serif;
     scroll-behavior: smooth;
 }
+
 /* header */
 header {
     height: 60px;
@@ -388,47 +389,7 @@ article .position {
     font-weight: 900;
     color: #58493f;
 }
-
-.form-body .user {
-    margin-top: 20px;
-}
-#fas {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-#payment {
-    display: flex;
-}
-.form-body input {
-    width: 90%;
-    margin-bottom: 25px;
-    padding: 0 30px 15px;
-    font-size: 16px;
-    border: none;
-    border-bottom: 1px solid #141E75;
-    outline: none;
-    background-color: rgba(134, 134, 134, 0);
-    color: #fff;
-}
-.form-body input:focus {
-    border-bottom: 1px solid #EEEEEE;
-}
-.reset-password {
-    color: black;
-    text-align: left;
-    margin-top: 0px;
-    font-size: 12px;
-}
-.login-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.form-body .btn {
+.form-body .submit {
     display: block;
     width: 80%;
     padding: 10px;
@@ -453,12 +414,110 @@ article .position {
 .form-body .signup span:hover{
     color: #845ec2;
 }
+.form-body .user {
+    margin-top: 25px;
+}
+#fas {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-body #success,#fill {
+    visibility: hidden;
+    right: 22%;
+}
+.form-body #success {
+    color: #2bd600;
+}
+.form-body #fill {
+    color:#ff0000;
+}
+
+label {
+    display: flex;
+    margin-bottom: 5px;
+    flex-direction: column;
+}
+
+label.success #fas {
+    color: #2bd600;
+}
+label.success input{
+    border-bottom: 1px solid #2bd600;
+}
+label.success input:focus{
+    border-bottom: 1px solid #ffffff;
+}
+label.fill #fas {
+    color: #ff0000;
+}
+label.fill input{
+    border-bottom: 1px solid #ff0000;
+}
+label.fill input:focus{
+    border-bottom: 1px solid #ffffff;
+}
+label.wrong #fas {
+    color: #ff0000;
+}label.wrong input{
+    border-bottom: 1px solid #ff0000;
+}
+label.wrong input:focus{
+    border-bottom: 1px solid #ffffff;
+}
+.form-body input {
+    width: 100%;
+    padding: 0 30px 15px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #141E75;
+    outline: none;
+    background-color: rgba(134, 134, 134, 0);
+    color: #fff;
+}
+.form-body input:focus {
+    border-bottom: 1px solid #EEEEEE;
+}
+.form-body select {
+    border-radius: 5px;
+    height: 25px;
+    background-color: white;
+    text-align: center;
+}
+label.success select{
+    box-shadow: 0 0 1px 1px #2bd600;
+}
+label.fill select{
+    box-shadow: 0 0 1px 1px #ff0000;
+}
+label.wrong select{
+    box-shadow: 0 0 1px 1px #ff0000;
+}
+.fill-message {
+    position: absolute;
+}
+label.wrong .wrong-message{
+    visibility: visible;
+}
+label.fill .fill-message{
+    visibility: visible;
+}
 .prove {
-    margin-top: 10px;
-    margin-bottom: 10px;
     color: #58493f;
     font-size: 14px;
-    padding-left: 5px;
+    padding: 0 0 5px 5px;
+
+}
+#transfer {
+    margin-top: 20px;
+}
+
+.error-message {
+    font-size: 12px;
+    color: #ff0000;
+    text-align: start;
+    visibility: hidden;
 }
 /* number import */
 /* Chrome, Safari, Edge, Opera */
@@ -513,4 +572,41 @@ footer a{
     font-family: 'Times New Roman', Times, serif;
     font-weight: 600;
     letter-spacing: 2px;
+}
+
+/* custon scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(5, 106, 131); 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(3, 42, 114); 
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: black;
+  background-color: rgba(134, 134, 134, 0.6);
 }
