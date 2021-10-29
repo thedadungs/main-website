@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Webinar Registration</title>
+        <link rel="stylesheet" href="assets/registrationPage.css">
+        <link rel="stylesheet" href="/assets/responsive.css">
+        <script src="/assets/regisScript.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg></script>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="container">
+            <div class="regis-header">
+                <img src="assets/photo/Logo.png" height="30px">
+                <div class="title">Event Registration</div>
+                <a href="/index.html" class="close-button">&times;</a>
+            </div>
+            <div class="registration">
+                <div class="poster">
+                    <img src="/assets/photo/1.png" >
+                </div>
+                <div class="left-body">
+                    <div class="form">
+                        <form name="database" id="database" method="post"  autocomplete="off" >  
+                            <h1>Register</h1>
+                            <div class="success active" id="form-success" >
+                                <p class="success-text"><strong>Selamat,</strong> anda telah terdaftar</p>
+                            </div>                        
+                            <i class="fas fa-user" id="fas"></i>
+                            <input type="text" name="username" id="username" placeholder="Nama"required/>
+                            <div class="error-message">
+                                <p class="fill-message">Harus diisi</p>
+                                <p class="wrong-message">$</p>
+                            </div>
+                            <i class="fas fa-graduation-cap" id="fas"></i>
+                            <input type="text" name="school" id="school" placeholder="Asal Sekolah"required/>
+                            <div class="error-message">
+                                <p class="fill-message">Harus diisi</p>
+                                <p class="wrong-message">$</p>
+                            </div>
+                            <i class="fas fa-envelope"id="fas"></i>
+                            <input type="text" name="email" id="email" placeholder="Alamat Email"required/>
+                            <div class="error-message">
+                                <p class="fill-message">Harus diisi</p>
+                                <p class="wrong-message">Email tidak valid</p>
+                            </div>
+                            <i class="fas fa-phone-square-alt"id="fas" ></i>
+                            <input type="number" maxlength="4" name="phone" id="phone" onkeypress="return onlyNumber(event)" class="noscroll" placeholder="No HP, ex : 088876543210 " required/>
+                            <div class="error-message">
+                                <p class="fill-message">Harus diisi</p>
+                                <p class="wrong-message">Nomor tidak valid</p>
+                            </div>
+                            <div class="prove">Metode Pembayaran</div>
+                            <!-- option select -->
+                            <select name="payment" id="payment" required>
+                                <option value="" >-- Pilih Satu --</option>
+                                <option value="ovo">OVO</option>
+                                <option value="gopay">Gopay</option>
+                                <option value="bri">Bank Bri</option>
+                                <option value="bca">Bank Bca</option>
+                            </select>
+                            <div class="error-message">
+                                <p class="fill-message">Pilih metode pembayaran</p>
+                            </div>
+                            <div class="prove">Bukti Transfer</div>
+                            <input type="file" name="filename" id="bukti" accept="image/gif,image/png, image/jpg, image/jpeg" value="image"required/>
+                            <div class="error-message">
+                                <p class="fill-message">Masukkan bukti pembayaran</p>
+                                <p class="wrong-message">Masukkan file .jpg .jpeg .png</p>
+                            </div>
+                            <button class="submit" type="submit" name="submit" id="submit">Submit</button>  
+                            <div class="lds-dual-ring loading active"></div>
+                        </form>
+                    </div>
+                </div>              
+            </div> 
+        </div>
+
+        <script>
+
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxeXQXaxzI_JeVFKX1yp73zUHRhOSXGBwRRF9rxlVDx1mlD0CDhwzV4zlxTPFYkvxDayA/exec';
+        const form = document.forms['database']
+        const btnKirim = document.querySelector('.submit');
+        const btnLoading = document.querySelector('.loading');
+        const success = document.querySelector('.success');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            btnKirim.classList.toggle('active')
+            btnLoading.classList.toggle('active')
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    success.classList.toggle('active');
+                    btnKirim.classList.toggle('active');
+                    btnLoading.classList.toggle('active');
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+
+        </script>
+        
+    </body>
+</html>

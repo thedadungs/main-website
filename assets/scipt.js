@@ -1,10 +1,4 @@
-const openRegisterButtons = document.querySelectorAll('[data-register-open]')
-const closeProjectButtons = document.querySelectorAll('[data-close-button]')
-const formControlValue = document.getElementsByClassName('form-control')
-const overlay = document.getElementById('overlay')
-const overlay2 = document.getElementById('overlay2')
-const body = document.getElementById('body')
-const phone  = document.getElementById('phone')
+
 var header = document.getElementById("header");
 var sticky = header.offsetTop;
 var info = document.getElementById("information");
@@ -14,34 +8,8 @@ var memberSticky = member.offsetTop;
 const articles = document.getElementsByTagName('article');
 
 // function
-function onlyNumber(evt) {
-  var ASCIICode = (evt.which) ? evt.which : evt.keyCode
-        if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
-            return false;
-        else
-            return true;
-}
 
-function openPopUp(x) {
-  if (x == null) return
-  x.classList.add('active')
-  overlay.classList.add('active')
-  body.classList.add('active')
-}
 
-function closePopUp(x) {
-  if (x == null) return
-  x.classList.remove('active')
-  overlay.classList.remove('active')
-  body.classList.remove('active')
-  clearForms($('#user'));
-  formControlValue[0].classList.remove('fill','wrong','success');
-  formControlValue[1].classList.remove('fill','wrong','success');
-  formControlValue[2].classList.remove('fill','wrong','success');
-  formControlValue[3].classList.remove('fill','wrong','success');
-  formControlValue[4].classList.remove('fill','wrong','success');
-  formControlValue[5].classList.remove('fill','wrong','success');
-}
 
 function myFunction() {
   if (window.pageYOffset == sticky) {
@@ -68,34 +36,6 @@ $(document).ready(function(){
     $(".text").toggleClass("active")
 	});
 });
-
-openRegisterButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const regis = document.querySelector(button.dataset.registerOpen)
-    openPopUp(regis)
-  })
-})
-
-closeProjectButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const regis = button.closest('.regis')
-    closePopUp(regis)
-  })
-})
-document.addEventListener('keydown', function(event){
-	if(event.key === "Escape"){
-    const regiss = document.querySelectorAll('.regis.active')
-    regiss.forEach(project => {
-      closePopUp(project)
-    })
-	}
-});
-overlay.addEventListener('click', () => {
-  const regiss = document.querySelectorAll('.regis.active')
-  regiss.forEach(project => {
-    closePopUp(project)
-  })
-})
 
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {
@@ -197,16 +137,3 @@ function validate() {
  
   return true;
  }
-  var form = document.getElementById('sheetdb-form');
-  form.addEventListener("submit", e => {
-    e.preventDefault();
-    fetch(form.action, {
-        method : "POST",
-        body: new FormData(document.getElementById("sheetdb-form")),
-    }).then(
-        response => response.json()
-    ).then((html) => {
-      // you can put any JS code here
-      alert('success')
-    });
-  });

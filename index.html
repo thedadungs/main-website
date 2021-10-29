@@ -26,7 +26,7 @@
                 <li><a onfocus="this.blur();" href="#body">HOME</a></li>
                 <li><a onfocus="this.blur();" href="#information">INFORMATIONS</a></li>
                 <li><a onfocus="this.blur();" href="#member">MEMBERS</a></li>
-                <li><button data-register-open="#regis">REGISTER</button></li>
+                <li><a class="button" href="/registrationPage.html">REGISTER</a></li>
             </div>
         </header>
         <!-- homepage -->
@@ -40,86 +40,6 @@
             </div>           
             <div class="sticker"><img src="assets/photo/sticker.png"></div>
         </div>
-        <!-- Registration form page -->
-        <div class="regis" id="regis">
-            <!-- Registration header -->
-            <div class="regis-header">
-                <img src="assets/photo/Logo.png" height="30px">
-                <div class="title">Event Registration</div>
-                <button data-close-button class="close-button">&times;</button>
-            </div>
-            <!-- Registration body -->
-            <div class="regis-body">
-                <!-- left side body -->
-                <div class="poster">
-                    <img src="assets/photo/1.png">
-                </div>
-                <!-- formulir / right side body -->
-                <div class="form-body">
-                    <div class="form">
-                        <h1>Register</h1>
-                        <form action="insert.php" method="post" class="user" id="user">
-                            <label class="form-control">
-                                <i class="fas fa-user" id="fas"></i>
-                                <input type="text" name="username" id="username" placeholder="Nama"required/>
-                                <div class="error-message">
-                                    <p class="fill-message">Harus diisi</p>
-                                    <p class="wrong-message">$</p>
-                                </div>
-                            </label>
-                            <label class="form-control">
-                                <i class="fas fa-graduation-cap" id="fas"></i>
-                                <input type="text" name="school" id="school" placeholder="Asal Sekolah"required/>
-                                <div class="error-message">
-                                    <p class="fill-message">Harus diisi</p>
-                                    <p class="wrong-message">$</p>
-                                </div>
-                            </label>
-                            <label class="form-control">
-                                <i class="fas fa-envelope"id="fas"></i>
-                                <input type="text" name="email" id="email" placeholder="Alamat Email"required/>
-                                <div class="error-message">
-                                    <p class="fill-message">Harus diisi</p>
-                                    <p class="wrong-message">Email tidak valid</p>
-                                </div>
-                            </label>
-                            <label class="form-control">
-                                <i class="fas fa-phone-square-alt"id="fas" ></i>
-                                <input type="number" maxlength="4" name="phone" id="phone" onkeypress="return onlyNumber(event)"  placeholder="No HP, ex : 088876543210 " required/>
-                                <div class="error-message">
-                                    <p class="fill-message">Harus diisi</p>
-                                    <p class="wrong-message">Nomor tidak valid</p>
-                                </div>
-                            </label>
-                            <label class="form-control" id="metode">
-                                <div class="prove">Metode Pembayaran</div>
-                                <!-- option select -->
-                                <select name="payment" id="payment" required>
-                                    <option selected="selected" >-- Pilih Satu --</option>
-                                    <option value="ovo">OVO</option>
-                                    <option value="gopay">Gopay</option>
-                                    <option value="bri">Bank Bri</option>
-                                    <option value="bca">Bank Bca</option>
-                                </select>
-                                <div class="error-message">
-                                    <p class="fill-message">Pilih metode pembayaran</p>
-                                </div>
-                            </label>            
-                            <label class="form-control" id="transfer">
-                                <div class="prove">Bukti Transfer</div>
-                                <input type="file" name="filename" id="bukti" accept="image/gif,image/png, image/jpg, image/jpeg" value="image"required/>
-                                <div class="error-message">
-                                    <p class="fill-message">Masukkan bukti pembayaran</p>
-                                    <p class="wrong-message">Masukkan file .jpg .jpeg .png</p>
-                                </div>
-                            </label>  
-                            <input class="submit" type="submit" id="submit" value="Submit"></button>  
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="overlay"></div>
         <!-- event placement -->
         <div class="information" id="information">
             <div class="upcoming">
