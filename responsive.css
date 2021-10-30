@@ -130,6 +130,9 @@
     .right-header {
         padding-right: 25px;
     }
+    .container {
+        top:-3px;
+    }
     .container .title {
         top: 40%;
         left: 50%;
@@ -222,6 +225,9 @@ and (-webkit-min-device-pixel-ratio: 1) {
     }
     .right-header {
         padding-right: 15px;
+    }
+    .container {
+        top:-3px;
     }
     .container .title {
         top: 40%;
@@ -327,6 +333,9 @@ and (max-device-width: 400px) {
     }
     .right-header {
         padding-right: 15px;
+    }
+    .container {
+        top:-3px;
     }
     .container .title {
         top: 40%;
@@ -434,6 +443,9 @@ and (max-device-width: 400px) {
     }
     .right-header {
         padding-right: 15px;
+    }
+    .container {
+        top:-3px;
     }
     .container .title {
         top: 40%;

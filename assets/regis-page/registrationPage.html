@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Webinar Registration</title>
+        <title>Registration Page</title>
+        <link rel="shortcut icon" href="/assets/photo/Logo.ico" />
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="responsive.css">
         <script src="Script.js"></script>
@@ -19,7 +20,7 @@
             </div>
             <div class="registration">
                 <div class="poster">
-                    <img src="/assets/photo/1.png" >
+                    <img src="/assets/photo/poster.png" >
                 </div>
                 <div class="left-body">
                     <div class="form">
@@ -41,14 +42,14 @@
                                 <p class="wrong-message">$</p>
                             </div>
                             <i class="fas fa-envelope"id="fas"></i>
-                            <input type="text" name="email" id="email"  
+                            <input type="email" name="email" id="email"  
                             placeholder="Alamat Email"required/>
                             <div class="error-message">
                                 <p class="fill-message">Harus diisi</p>
                                 <p class="wrong-message">Email tidak valid</p>
                             </div>
                             <i class="fas fa-phone-square-alt"id="fas" ></i>
-                            <input type="number" minlength="11" name="phone" id="phone" onkeypress="return onlyNumber(event)" pattern="\+?([ -]?\d+)+|\(\d+\)([ -]\d+)" class="noscroll" placeholder="No HP " required/>
+                            <input type="tel" minlength="11" name="phone" id="phone" onkeypress="return onlyNumber(event)" pattern="\+?([ -]?\d+)+|\(\d+\)([ -]\d+)" class="noscroll" placeholder="No HP " required/>
                             <div class="error-message">
                                 <p class="fill-message">Harus diisi</p>
                                 <p class="wrong-message">Nomor tidak valid</p>
