@@ -6,14 +6,16 @@
         <link rel="stylesheet" href="responsive.css">
         <script src="Script.js"></script>
         <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <meta charset="UTF-8">
     </head>
-    <body>
+    <body >
+
         <div class="container">
             <div class="regis-header">
                 <img src="/assets/photo/Logo.png" height="30px">
                 <div class="title">Event Registration</div>
-                <a href="/index.html" class="close-button">&times;</a>
+                <a href="https://thedadungs.live/" class="close-button">&times;</a>
             </div>
             <div class="registration">
                 <div class="poster">
@@ -24,10 +26,10 @@
                         <form name="database" id="database" method="post"  autocomplete="off" >  
                             <h1>Register</h1>
                             <div class="success active" id="form-success" >
-                                <p class="success-text"><strong>Selamat,</strong> anda telah terdaftar</p>
+                                <p class="success-text"><strong>Selamat,</strong> Anda telah terdaftar</p>
                             </div>                        
                             <i class="fas fa-user" id="fas"></i>
-                            <input type="text" name="username" id="username" placeholder="Nama"required/>
+                            <input type="text" name="username" id="username" oninvalid="('Please input your name correctly.')" placeholder="Nama"required/>
                             <div class="error-message">
                                 <p class="fill-message">Harus diisi</p>
                                 <p class="wrong-message">$</p>
@@ -39,13 +41,14 @@
                                 <p class="wrong-message">$</p>
                             </div>
                             <i class="fas fa-envelope"id="fas"></i>
-                            <input type="text" name="email" id="email" placeholder="Alamat Email"required/>
+                            <input type="text" name="email" id="email"  
+                            placeholder="Alamat Email"required/>
                             <div class="error-message">
                                 <p class="fill-message">Harus diisi</p>
                                 <p class="wrong-message">Email tidak valid</p>
                             </div>
                             <i class="fas fa-phone-square-alt"id="fas" ></i>
-                            <input type="number" maxlength="4" name="phone" id="phone" onkeypress="return onlyNumber(event)" class="noscroll" placeholder="No HP, ex : 088876543210 " required/>
+                            <input type="number" minlength="11" name="phone" id="phone" onkeypress="return onlyNumber(event)" pattern="\+?([ -]?\d+)+|\(\d+\)([ -]\d+)" class="noscroll" placeholder="No HP " required/>
                             <div class="error-message">
                                 <p class="fill-message">Harus diisi</p>
                                 <p class="wrong-message">Nomor tidak valid</p>
@@ -63,7 +66,10 @@
                                 <p class="fill-message">Pilih metode pembayaran</p>
                             </div>
                             <div class="prove">Bukti Transfer</div>
-                            <input type="file" name="filename" id="bukti" accept="image/gif,image/png, image/jpg, image/jpeg" value="image"required/>
+                            <input type="file" name="filename" id="bukti" onchange="LoadFile(event)"accept="image/gif,image/png, image/jpg, image/jpeg" required/>
+                            <input type="hidden" id="fileData" name="fileData" />
+                            <input type="hidden" id="mimeType" name="mimeType" />
+                            <input type="hidden" id="fileName" name="fileName" />
                             <div class="error-message">
                                 <p class="fill-message">Masukkan bukti pembayaran</p>
                                 <p class="wrong-message">Masukkan file .jpg .jpeg .png</p>
@@ -77,9 +83,7 @@
         </div>
 
         <script>
-
-
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxeXQXaxzI_JeVFKX1yp73zUHRhOSXGBwRRF9rxlVDx1mlD0CDhwzV4zlxTPFYkvxDayA/exec';
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby2TOcaNF696qIlzrYfRmp1XsIPEwlv3Ox_uusX_HC4C9NJLlDg1mWzdGhGD-VsLoARiw/exec';
         const form = document.forms['database']
         const btnKirim = document.querySelector('.submit');
         const btnLoading = document.querySelector('.loading');
@@ -98,6 +102,24 @@
                 })
                 .catch(error => console.error('Error!', error.message))
         })
+
+                function LoadFile(event)
+                {
+                    var file = event.target.files[0];
+                    var reader = new FileReader();
+                    reader.onload = function(e) {
+                        console.log(e.target.result);
+                        var fileData = e.target.result.substr(e.target.result.indexOf(",")+1);
+                        var mimeTypeStart = e.target.result.indexOf("data:") + 5;
+                        var mimeTypeEnd = e.target.result.indexOf(";");
+                        var mimeType = e.target.result.substr(mimeTypeStart, mimeTypeEnd - mimeTypeStart);
+                        var fileName = file.name;
+                        document.getElementById("fileData").value = fileData;
+                        document.getElementById("mimeType").value = mimeType;
+                        document.getElementById("fileName").value = fileName;
+                    };    
+                    reader.readAsDataURL(file);
+                }
 
         </script>
         
