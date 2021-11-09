@@ -24,17 +24,18 @@
         width: 100%;
         float: none;
         font-size: 16px;
-        margin-top: 25px;
+
     }
     .form {
         height: auto;
         width: 100%;
         margin: 0 auto;
-        padding: 20px;
+        padding: 50px 20px;
+        
     }
     .prove {
-        margin-top: 0px;
-        margin-bottom: 15px;
+        margin-top: 40px;
+        margin-bottom: 20px;
         font-size: 16px;
         font-weight: 600;
     }
@@ -44,14 +45,15 @@
 
     .form input {
         width: 100%;    
-        max-width: 1000%;
-        margin-bottom: 15px;
+        max-width: 150%;
+        margin-bottom: 20px;
     }
     .form .submit {
         width: 100%;
+        margin-top: 30px;
     }
     .regis-header {
-        height: 6%;
+        height: 60px;
     }
 }
 @media only screen 
@@ -84,10 +86,10 @@
         height: auto;
         width: 100%;
         margin: 0 auto;
-        padding: 20px;
+        padding: 50px 20px;
     }
     .prove {
-        margin-top: 0px;
+        margin-top: 40px;
         margin-bottom: 20px;
         font-size: 14px;
     }
@@ -104,7 +106,7 @@
         width: 100%;
     }
     .regis-header {
-        height: 6%;
+        height: 60px;
     }
 }
 
@@ -138,10 +140,10 @@ and (-webkit-min-device-pixel-ratio: 1) {
         height: auto;
         width: 100%;
         margin: 0 auto;
-        padding: 20px;
+        padding: 50px 20px;
     }
     .prove {
-        margin-top: 0px;
+        margin-top: 40px;
         margin-bottom: 20px;
         font-size: 14px;
     }
@@ -158,7 +160,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
         width: 100%;
     }
     .regis-header {
-        height: 6%;
+        height: 60px;
     }
 }
 
@@ -192,10 +194,10 @@ and (max-device-width: 400px) {
         height: auto;
         width: 100%;
         margin: 0 auto;
-        padding: 20px;
+        padding: 50px 20px;
     }
     .prove {
-        margin-top: 0px;
+        margin-top: 40px;
         margin-bottom: 20px;
         font-size: 14px;
     }
@@ -212,13 +214,11 @@ and (max-device-width: 400px) {
         width: 100%;
     }
     .regis-header {
-        height: 6%;
+        height: 60px;
     }
 }
 @media( max-device-width:300px ){
-    .regis-header {
-        height: 6%;
-    }
+
     .regis-header .title {
         font-size: .8rem;
     }
@@ -240,10 +240,10 @@ and (max-device-width: 400px) {
         height: auto;
         width: 100%;
         margin: 0 auto;
-        padding: 20px;
+        padding: 75px 20px;
     }
     .prove {
-        margin-top: 0px;
+        margin-top: 40px;
         margin-bottom: 20px;
         font-size: 12px;
     }

@@ -33,11 +33,7 @@
         font-weight: 300;
     }
     .information {
-        height: 30vh;
         padding-top: 25px;
-    }
-    .member {
-        top: 130vh;
     }
     .grid {
         display: grid;
@@ -147,11 +143,7 @@
     }
 
     .information {
-        height: 30vh;
         padding-top: 25px;
-    }
-    .member {
-        top: 130vh;
     }
     .grid {
         grid-template-columns: [first] 150px [line2] 150px 150px [end];;
@@ -247,11 +239,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
     }
 
     .information {
-        height: 30vh;
         padding-top: 25px;
-    }
-    .member {
-        top: 130vh;
     }
     .grid {
         grid-template-columns: [first] 80px [line2] 80px 80px [end];;
@@ -358,12 +346,9 @@ and (max-device-width: 400px) {
     }
 
     .information {
-        height: 30vh;
         padding-top: 15px;
     }
-    .member {
-        top: 130vh;
-    }
+
     section{
         width: 85%;
         margin: 0 0;
@@ -471,11 +456,8 @@ and (max-device-width: 400px) {
     }
 
     .information {
-        height: 30vh;
+        height: 70vh;
         padding-top: 25px;
-    }
-    .member {
-        top: 130vh;
     }
     section{
         width: 80%;
