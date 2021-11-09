@@ -11,23 +11,32 @@
         <meta charset="UTF-8">
     </head>
     <body >
-
         <div class="container">
             <div class="regis-header">
                 <img src="/assets/photo/Logo.png" height="30px">
                 <div class="title">Event Registration</div>
-                <a href="https://thedadungs.live/" class="close-button">&times;</a>
+                <a href="/index.html" class="close-button">&times;</a>
             </div>
             <div class="registration">
                 <div class="poster">
-                    <img src="/assets/photo/poster.png" >
+                    <div class="inside-poster">
+                        <h1>Cara Pembayaran</h1>
+                        <div class="payment-pict">
+                            <img src="/assets/photo/shopee.png">
+                            <img src="/assets/photo/ovo.png">
+                            <img class="bank" src="/assets/photo/bni.png">
+                        </div>
+                    </div>
                 </div>
                 <div class="left-body">
                     <div class="form">
                         <form name="database" id="database" method="post"  autocomplete="off" >  
                             <h1>Register</h1>
                             <div class="success active" id="form-success" >
-                                <p class="success-text"><strong>Selamat,</strong> Anda telah terdaftar</p>
+                                <p class="success-text">
+                                    <strong>Selamat,</strong> Anda telah terdaftar<br>
+                                    Silahkan begabung ke dalam grup telegram <a id="grup-tele" href="https://t.me/joinchat/e-eauG9WbJs4NzE1">klik disini</a>
+                                </p>
                             </div>                        
                             <i class="fas fa-user" id="fas"></i>
                             <input type="text" name="username" id="username" oninvalid="('Please input your name correctly.')" placeholder="Nama"required/>
@@ -59,9 +68,8 @@
                             <select name="payment" id="payment" required>
                                 <option value="" >-- Pilih Satu --</option>
                                 <option value="ovo">OVO</option>
-                                <option value="gopay">Gopay</option>
-                                <option value="bri">Bank Bri</option>
-                                <option value="bca">Bank Bca</option>
+                                <option value="shopeepay">Shopeepay</option>
+                                <option value="bni">Bank BNI</option>
                             </select>
                             <div class="error-message">
                                 <p class="fill-message">Pilih metode pembayaran</p>

@@ -32,16 +32,39 @@
     border-left: 3px solid white;
     
 }
-.poster img {
-    max-height: 90%;
-    max-width: 90%;
-    display: inline-block;
-    vertical-align: middle;
-    height: 90%;
-    margin-left: 28%;
-    margin-top: 4%;
-    width: auto;
+.inside-poster {
+    max-height: 91%;
+    height: 70%;
+    width: 80%;
+    max-width: 80%;
+    color: white;
+    margin: 0 auto;
 }
+.inside-poster h1 {
+    font-weight: 900;
+    color: #58493f;
+    font-size: 24px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    padding-left: 10px;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+}
+.inside-poster img{
+    height: auto;
+    width: 90%;
+    justify-self: center;
+}
+.payment-pict {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;    
+    justify-content: center;
+
+}
+
 /* left body */
 .form {
     width: 50%;
@@ -83,12 +106,13 @@
     font-size: 1.5rem;
     font-weight: bold;
     color: rgba(255, 255, 255, 0.815);
-
 }
+
 /* input form  */
 form{
     width: 80%;
     max-width: 80%;
+    color: white;
 }
 .form h1 {
     font-weight: 900;
@@ -183,19 +207,25 @@ input[type="number"] {
     padding: 10px ;
     margin-top: -10px;
 }
-.success a{
-    outline: none;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 18px;
-    font-weight: 600;
-    color: black;
-}
+
 .success p {
     font-size: 14px;
     font-weight: 400;
     color: black;
+
 }
+.success p a {
+    color: rgb(9, 105, 122);
+    font-size: 14px;
+    font-weight: 800;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+.success p a:hover {
+    color: rgb(45, 52, 53);
+}
+
 .success.active {
     display: none;
 }

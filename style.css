@@ -36,22 +36,21 @@ header {
     color: white;
     text-decoration: none;
     padding: 5px 10px;
-    margin: 0 25px;
+    margin: 5px 25px;
     font-size: 1.1em;
-    font: bolder;
     border-radius: 10px;
     letter-spacing: 1px;
 }
 
 .right-header li .button {
-    color: white;
+    color: rgb(204, 204, 204);
     margin-left: 20px;
     border: 1px solid white;
     border-radius: 5px;
     border-style: none;
     padding:5px 15px;
-    margin-top: -20px;
-    font-weight: 800;
+    font-weight: 600;
+    word-spacing: 5px;
     background-image: linear-gradient(to left top, #012c6b, #004d7a, #00bf72);
     box-shadow: 0 0 3px 3px rgba(94, 55, 55, 0.315) ;
     cursor: pointer;
