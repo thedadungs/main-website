@@ -19,21 +19,51 @@
     .right-header {
         padding-right: 25px;
     }
+    .container {
+        height: 900px;
+    }
     .container .title {
         top: 40%;
         left: 50%;
         transform: translate(-50%,-40%);
     }
     .container h1{
-        font-size: 70px;
-        line-height: 100px;
+        font-size: 42px;
+        line-height: 30px;
     }
     .container p{
-        font-size: 18px;
-        font-weight: 300;
+        font-size: 16px;
+        font-weight: 400;
+        padding-top: 40px;
     }
+
     .information {
-        padding-top: 25px;
+        padding-top: 0px;
+        top: 900px;
+        height: 800px;
+    }
+    .event h3 {
+        font-size: 18px;
+    }
+    .event img {
+        width: 35%;
+    }
+    .event-info p {
+        line-height: 20px;
+        font-size: 16px;
+    }
+    .event-info a{
+        font-size: .8em;
+        line-height: 50px;
+    }
+    .event h3 {
+        margin-bottom: 50px;
+    }
+    .sticky{
+        height: 60px;
+    }
+    .member {
+        top: 1700px;
     }
     .grid {
         display: grid;
@@ -107,9 +137,10 @@
     .regis {
         height: auto;
     }
+
 }
 @media only screen 
-  and (min-device-width: 575px) 
+  and (min-device-width: 700px) 
   and (max-device-width: 900px) 
   and (-webkit-min-device-pixel-ratio: 1) { 
     header {
@@ -128,22 +159,48 @@
     .right-header {
         padding-right: 25px;
     }
+    .container {
+        height: 700px;
+    }
     .container .title {
-        top: 40%;
+        top: 35%;
         left: 50%;
-        transform: translate(-50%,-40%);
+        transform: translate(-50%,-35%);
     }
     .container h1{
-        font-size: 70px;
-        line-height: 100px;
+        font-size: 34px;
+        line-height: 30px;
     }
     .container p{
-        font-size: 18px;
-        font-weight: 300;
+        font-size: 16px;
+        font-weight: 400;
+        padding-top: 25px;
     }
 
     .information {
-        padding-top: 25px;
+        padding-top: 0px;
+        top: 700px;
+        height: 750px;
+    }
+    .event img {
+        width: 45%;
+    }
+    .event-info p {
+        line-height: 20px;
+        font-size: 14px;
+    }
+    .event-info a{
+        font-size: .7em;
+        line-height: 50px;
+    }
+    .event h3 {
+        margin-bottom: 50px;
+    }
+    .sticky{
+        height: 60px;
+    }
+    .member {
+        top: 1450px;
     }
     .grid {
         grid-template-columns: [first] 150px [line2] 150px 150px [end];;
@@ -201,12 +258,129 @@
 }
 
 @media only screen 
+  and (min-device-width: 575px) 
+  and (max-device-width: 700px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    header {
+        padding: 0 0;
+        height: 80px;
+    }
+    .left-header {
+        padding-left: 15px;
+    }
+    .right-header a{
+        display: none;
+    }
+    .right-header .button {
+        display: block;
+    }
+    .right-header {
+        padding-right: 25px;
+    }
+    .container {
+        height: 700px;
+    }
+    .container .title {
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%,-35%);
+    }
+    .container h1{
+        font-size: 34px;
+        line-height: 30px;
+    }
+    .container p{
+        font-size: 16px;
+        font-weight: 400;
+        padding-top: 25px;
+    }
+
+    .information {
+        padding-top: 0px;
+        top: 700px;
+        height: 700px;
+    }
+    .event img {
+        width: 50%;
+    }
+    .event-info p {
+        line-height: 20px;
+        font-size: 12px;
+    }
+    .event-info a{
+        font-size: .7em;
+        line-height: 50px;
+    }
+    .event h3 {
+        margin-bottom: 50px;
+    }
+    .sticky{
+        height: 60px;
+    }
+    .member {
+        top: 1400px;
+    }
+    .grid {
+        grid-template-columns: [first] 150px [line2] 150px 150px [end];;
+        grid-template-rows: [row1-start] 300px [row1-end] 300px [third-line] 300px [last-line];
+        justify-content: center;
+    }
+    section {
+        width: 90%;
+    }
+    article {
+        border-radius: 25px;
+        width: 150px;
+        height: 150px;
+    }
+    article img {
+        height: 150px;
+    }
+    article p {
+        font-size: 13px;
+        padding: 0 5px 20px 5px;
+    }
+    article h3 {
+        font-size: 10px;
+        padding: 15px 5px 5px 5px;
+    }
+    article .position {
+        font-size: 15px;
+        font-weight: 800;
+    }
+    .regis-body .poster {
+        display: none;
+    }
+    .form-body {
+        height: 70%;
+        max-width: 100%;
+        width: 100%;
+        float: none;
+        margin-top: 25px;
+    }
+    .login-btn {
+        margin-top: 50px;
+    }
+    .form-body .btn {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .prove {
+        margin-top: 0px;
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+    .regis {
+        height: auto;
+    }
+}
+@media only screen 
 and (min-device-width: 400px) 
 and (max-device-width: 575px) 
 and (-webkit-min-device-pixel-ratio: 1) {
     header {
         padding: 0 0;
-        height: 80px;
+        height: 60px;
     }
     .left-header {
         padding-left: 5px;
@@ -220,26 +394,49 @@ and (-webkit-min-device-pixel-ratio: 1) {
     .right-header {
         padding-right: 15px;
     }
+
     .container {
-        top:-3px;
+        height: 600px;
     }
     .container .title {
-        top: 40%;
+        top: 30%;
         left: 50%;
-        transform: translate(-50%,-40%);
+        transform: translate(-50%,-30%);
     }
     .container h1{
-        font-size: 58px;
-        line-height: 75px;
+        font-size: 28px;
+        line-height: 30px;
     }
     .container p{
-        font-size: 18px;
-        font-weight: 300;
+        font-size: 12px;
+        font-weight: 400;
         padding-top: 25px;
     }
 
     .information {
-        padding-top: 25px;
+        padding-top: 0px;
+        top: 600px;
+        height: 600px;
+    }
+    .event img {
+        width: 50%;
+    }
+    .event-info p {
+        line-height: 20px;
+        font-size: 12px;
+    }
+    .event-info a{
+        font-size: .7em;
+        line-height: 50px;
+    }
+    .event h3 {
+        margin-bottom: 50px;
+    }
+    .sticky{
+        height: 60px;
+    }
+    .member {
+        top: 1200px;
     }
     .grid {
         grid-template-columns: [first] 80px [line2] 80px 80px [end];;
@@ -293,60 +490,74 @@ and (-webkit-min-device-pixel-ratio: 1) {
     .regis {
         height: auto;
     }
+
 }
 
 
 @media only screen  
-and (min-device-width: 300px)
+and (min-device-width: 302px)
 and (max-device-width: 400px) {
     header {
         padding: 0 0;
-        height: 80px;
+        height: 50px;
     }
     .left-header {
         padding-left: 5px;
     }
     .left-header h4{
-        font-size: 10px;
+        font-size: 12px;
         letter-spacing: normal;
     }
     .left-header img{
         height: 35px;
     }
-    .right-header li button {
-        border-radius:100px;
+    .right-header li .button {
         padding:5px 10px;
-        font-size: 10px;
+        font-size: 12px;
+        display: block;
     }
     .right-header a{
         display: none;
-    }
-    .right-header .button {
-        display: block;
     }
     .right-header {
         padding-right: 15px;
     }
     .container {
-        top:-3px;
+        height: 500px;
     }
     .container .title {
-        top: 40%;
+        top: 30%;
         left: 50%;
-        transform: translate(-50%,-40%);
+        transform: translate(-50%,-30%);
     }
     .container h1{
-        font-size: 38px;
-        line-height: 60px;
+        font-size: 24px;
+        line-height: 30px;
     }
     .container p{
-        font-size: 14px;
-        font-weight: 300;
+        font-size: 10px;
+        font-weight: 400;
         padding-top: 25px;
     }
 
     .information {
         padding-top: 15px;
+        top: 500px;
+        height: 500px;
+    }
+    .event img {
+        width: 50%;
+    }
+    .event-info p {
+        line-height: 20px;
+        font-size: 12px;
+    }
+    .event-info a{
+        font-size: .7em;
+        line-height: 50px;
+    }
+    .event h3 {
+        margin-bottom: 50px ;
     }
 
     section{
@@ -381,83 +592,91 @@ and (max-device-width: 400px) {
         font-size: 10px;
         font-weight: 600;
     }
-    .regis-body .poster {
-        display: none;
+    .sticky{
+        height: 50px;
     }
-    .form-body {
-        height: 70%;
-        max-width: 100%;
-        width: 100%;
-        float: none;
-    }
-
-    .login-btn {
-        margin-top: 50px;
-    }
-    .form-body .btn {
-        width: 100%;
-        margin-bottom: 25px;
-    }
-
-    .prove {
-        margin-top: 0px;
-        margin-bottom: 20px;
-        font-size: 12px;
-    }
-    .regis {
-        height: auto;
+    .member {
+        top: 1000px;
     }
 }
-@media( max-device-width:300px ){
+@media( max-device-width:301px ){
     header {
         padding: 0 0;
-        height: 80px;
+        height: 40px;
     }
     .left-header {
-        padding-left: 5px;
+        padding-left: 10px;
     }
     .left-header h4{
         font-size: 10px;
         letter-spacing: normal;
     }
     .left-header img{
-        height: 35px;
+        height: 20px;
     }
-    .right-header li button {
-        border-radius:100px;
-        padding:5px 10px;
-        font-size: 10px;
+    .right-header li .button {
+        padding:5px 15px;
+        font-weight: 600;
+        word-spacing: 0;
+    }
+    .sticky {
+        height: 40px;
     }
     .right-header a{
         display: none;
+        
     }
     .right-header .button {
         display: block;
+        font-size: 8px;
     }
     .right-header {
         padding-right: 15px;
     }
     .container {
-        top:-3px;
+        height: 400px;
     }
     .container .title {
-        top: 40%;
+        top: 30%;
         left: 50%;
         transform: translate(-50%,-40%);
     }
     .container h1{
-        font-size: 24px;
-        line-height: 30px;
+        font-size: 12px;
+        word-spacing: 5px;
+        font: 600;
     }
     .container p{
         font-size: 8px;
         font-weight: 300;
-        padding-top: 25px;
+        padding-top: 20px;
     }
 
     .information {
-        height: 70vh;
-        padding-top: 25px;
+        height: 450px;
+        top: 400px;
+        padding-top: 0;
+    }
+    .event h3 {
+        font-size: 13px;
+        border-bottom: 2px solid black;
+        width: 60%;
+        color: rgb(0, 0, 0);
+        margin-bottom: 50px;
+        padding-bottom: 20px;
+        padding-top: 10px;
+    }
+
+    .event img {
+        width: 50%;
+    }
+    .event-info p {
+        line-height: 20px;
+        font-size: 12px;
+    }
+    .event-info a{
+        font-size: .7em;
+        line-height: 50px;
     }
     section{
         width: 80%;
@@ -519,5 +738,8 @@ and (max-device-width: 400px) {
     }
     .regis {
         height: auto;
+    }
+    .member {
+        top: 850px;
     }
 }
