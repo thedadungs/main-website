@@ -41,13 +41,13 @@
     margin: 0 auto;
 }
 .inside-poster h1 {
-    font-weight: 900;
+    font-weight: 800;
     color: #58493f;
     font-size: 24px;
     margin-bottom: 25px;
     margin-top: 25px;
     padding-left: 10px;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
     padding-bottom: 15px;
 }
 .inside-poster img{
@@ -118,8 +118,9 @@ form{
     font-size: 24px;
     margin-bottom: 15px;
     padding-left: 10px;
+    padding-bottom: 15px;
     margin-top: 25px;
-
+    border-bottom: 2px solid black;
 }
 .form input {
     width: 90%;

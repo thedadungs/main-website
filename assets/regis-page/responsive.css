@@ -1,20 +1,32 @@
 /* phone */
 /* ipad mini */
 @media only screen 
-  and (min-device-width: 768px) 
+  and (min-device-width: 875px) 
   and (max-device-width: 1150px) 
   and (-webkit-min-device-pixel-ratio: 1) {
 
     .form h1 {
-        font-size: 32px;
+        font-size: 28px;
         margin-bottom: 25px;
         margin-top: 10px;
         padding-left: 10px;
     }
+
     .form select {
         height: 30px;
         background-color: white;
         width: 100%;
+    }
+    .inside-poster {
+        height: 100%;
+        width: 80%;
+        max-width: 80%;
+        color: white;
+        margin: 0 auto;
+    }
+    .inside-poster h1 {
+        margin-bottom: 10px;
+        font-size: 28px;
     }
     .payment-pict {
         justify-content: center;
@@ -22,10 +34,10 @@
     .payment-pict img{
         height: auto;
         width: 60%;
-        margin-top: 25px;
+        margin-top: 20px;
     }
     .poster {
-        height: 250px;
+        height: 200px;
         border: none;
         width: 100%;
         margin-bottom: 50px;
@@ -45,9 +57,12 @@
         padding: 50px 20px;
         
     }
+    section {
+        padding-bottom: 0;
+        margin-bottom: 10px;
+    }
     .prove {
-        margin-top: 40px;
-        margin-bottom: 20px;
+        margin-top: 20px;
         font-size: 16px;
         font-weight: 600;
     }
@@ -73,8 +88,8 @@
   and (max-device-width: 875px) 
   and (-webkit-min-device-pixel-ratio: 1) { 
     .form h1 {
-        font-size: 28px;
-        margin-bottom: 25px;
+        font-size: 26px;
+        margin-bottom: 40px;
         margin-top: 10px;
         padding-left: 10px;
     }
@@ -82,6 +97,17 @@
         height: 30px;
         background-color: white;
         width: 100%;
+    }
+    .inside-poster {
+        height: 100%;
+        width: 80%;
+        max-width: 80%;
+        color: white;
+        margin: 0 auto;
+    }
+    .inside-poster h1 {
+        margin-bottom: 10px;
+        font-size: 26px;
     }
     .payment-pict {
         justify-content: center;
@@ -92,7 +118,7 @@
         margin-top: 25px;
     }
     .poster {
-        height: 250px;
+        height: 150px;
         border: none;
         width: 100%;
         margin-bottom: 50px;
@@ -111,10 +137,14 @@
         margin: 0 auto;
         padding: 50px 20px;
     }
+    section {
+        padding-bottom: 0;
+        margin-bottom: 10px;
+    }
     .prove {
-        margin-top: 40px;
-        margin-bottom: 20px;
-        font-size: 14px;
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: 600;
     }
     .regis {
         height: auto;
@@ -124,6 +154,8 @@
         width: 100%;    
         max-width: 1000%;
         margin-bottom: 15px;
+        left: -15px;
+        padding: 0 20px 5px;
     }
     .form .submit {
         width: 100%;
@@ -138,15 +170,26 @@ and (min-device-width: 400px)
 and (max-device-width: 575px) 
 and (-webkit-min-device-pixel-ratio: 1) {
     .form h1 {
-        font-size: 32px;
-        margin-bottom: 25px;
-        margin-top: 10px;
+        font-size: 24px;
+        margin-top: 0;
         padding-left: 10px;
+        margin-bottom: 40px;
     }
     .form select {
         height: 30px;
         background-color: white;
         width: 100%;
+    }
+    .inside-poster {
+        height: 100%;
+        width: 80%;
+        max-width: 80%;
+        color: white;
+        margin: 0 auto;
+    }
+    .inside-poster h1 {
+        margin-bottom: 10px;
+        font-size: 24px;
     }
     .payment-pict {
         justify-content: center;
@@ -154,10 +197,10 @@ and (-webkit-min-device-pixel-ratio: 1) {
     .payment-pict img{
         height: auto;
         width: 60%;
-        margin-top: 25px;
+        margin-top: 0;
     }
     .poster {
-        height: 250px;
+        height: 100px;
         border: none;
         width: 100%;
         margin-bottom: 50px;
@@ -168,7 +211,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
         width: 100%;
         float: none;
         font-size: 16px;
-        margin-top: 25px;
+        margin-top: 10px;
     }
     .form {
         height: auto;
@@ -176,10 +219,14 @@ and (-webkit-min-device-pixel-ratio: 1) {
         margin: 0 auto;
         padding: 50px 20px;
     }
+    section {
+        padding-bottom: 0;
+        margin-bottom: 10px;
+    }
     .prove {
-        margin-top: 40px;
-        margin-bottom: 20px;
-        font-size: 14px;
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: 600;
     }
     .regis {
         height: auto;
@@ -189,12 +236,14 @@ and (-webkit-min-device-pixel-ratio: 1) {
         width: 100%;    
         max-width: 1000%;
         margin-bottom: 15px;
+        left: -10px;
+        padding: 0 20px 5px;
     }
     .form .submit {
         width: 100%;
     }
     .regis-header {
-        height: 60px;
+        height: 50px;
     }
 }
 
@@ -203,7 +252,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 and (min-device-width: 300px)
 and (max-device-width: 400px) {
     .form h1 {
-        font-size: 28px;
+        font-size: 20px;
         margin-bottom: 25px;
         margin-top: 10px;
         padding-left: 10px;
@@ -212,6 +261,17 @@ and (max-device-width: 400px) {
         height: 30px;
         background-color: white;
         width: 100%;
+    }
+    .inside-poster {
+        height: 100%;
+        width: 80%;
+        max-width: 80%;
+        color: white;
+        margin: 0 auto;
+    }
+    .inside-poster h1 {
+        margin-bottom: 10px;
+        font-size: 20px;
     }
     .payment-pict {
         justify-content: center;
@@ -222,7 +282,7 @@ and (max-device-width: 400px) {
         margin-top: 25px;
     }
     .poster {
-        height: 250px;
+        height: 100px;
         border: none;
         width: 100%;
         margin-bottom: 50px;
@@ -241,34 +301,51 @@ and (max-device-width: 400px) {
         margin: 0 auto;
         padding: 50px 20px;
     }
-    .prove {
-        margin-top: 40px;
-        margin-bottom: 20px;
-        font-size: 14px;
+    section {
+        padding-bottom: 0;
+        margin-bottom: 10px;
     }
-    .regis {
-        height: auto;
+    .prove {
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: 600;
     }
 
     .form input {
         width: 100%;    
         max-width: 1000%;
         margin-bottom: 15px;
+        left: -10px;
+        padding: 0 15px 5px;
     }
     .form .submit {
         width: 100%;
     }
     .regis-header {
-        height: 60px;
+        height: 50px;
     }
 }
 @media( max-device-width:300px ){
-
+    .form h1 {
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
     .regis-header .title {
         font-size: .8rem;
     }
     .regis-header {
         height: 60px;
+    }
+    .inside-poster {
+        height: 100%;
+        width: 80%;
+        max-width: 80%;
+        color: white;
+        margin: 0 auto;
+    }
+    .inside-poster h1 {
+        margin-bottom: 20px;
+        font-size: 14px;
     }
     .payment-pict {
         justify-content: center;
@@ -279,7 +356,7 @@ and (max-device-width: 400px) {
         margin-top: 25px;
     }
     .poster {
-        height: 250px;
+        height: 10px;
         border: none;
         width: 100%;
         margin-bottom: 50px;
@@ -298,10 +375,14 @@ and (max-device-width: 400px) {
         margin: 0 auto;
         padding: 75px 20px;
     }
+    section {
+        padding-bottom: 0;
+        margin-bottom: 10px;
+    }
     .prove {
-        margin-top: 40px;
-        margin-bottom: 20px;
-        font-size: 12px;
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: 600;
     }
     .regis {
         height: auto;
@@ -311,6 +392,8 @@ and (max-device-width: 400px) {
         width: 100%;    
         max-width: 1000%;
         margin-bottom: 15px;
+        left: -10px;
+        padding: 0 15px 5px;
     }
     .form .submit {
         width: 100%;
