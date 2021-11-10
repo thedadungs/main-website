@@ -4,6 +4,7 @@
   and (min-device-width: 768px) 
   and (max-device-width: 1150px) 
   and (-webkit-min-device-pixel-ratio: 1) {
+
     .form h1 {
         font-size: 32px;
         margin-bottom: 25px;
@@ -15,8 +16,19 @@
         background-color: white;
         width: 100%;
     }
+    .payment-pict {
+        justify-content: space-between;
+    }
+    .payment-pict img{
+        height: auto;
+        width: 60%;
+        margin-top: 25px;
+    }
     .poster {
-        display: none;
+        height: 250px;
+        border: none;
+        width: 100%;
+        margin-bottom: 50px;
     }
     .form {
         height: 70%;
@@ -71,8 +83,14 @@
         background-color: white;
         width: 100%;
     }
+    .payment-pict img{
+        height: auto;
+        width: 75%;
+    }
     .poster {
-        display: none;
+        height: 250px;
+        border: none;
+        width: 100%;
     }
     .form {
         height: 70%;
@@ -125,8 +143,19 @@ and (-webkit-min-device-pixel-ratio: 1) {
         background-color: white;
         width: 100%;
     }
+    .payment-pict{
+        align-items: center;
+    }
+    .payment-pict img{
+        height: 40%;
+        width: auto;
+       
+    }
     .poster {
-        display: none;
+        margin-top: 50px;
+        height: 250px;
+        border: none;
+        width: 100%;
     }
     .form {
         height: 70%;
@@ -179,8 +208,19 @@ and (max-device-width: 400px) {
         background-color: white;
         width: 100%;
     }
+    .payment-pict{
+        align-items: center;
+    }
+    .payment-pict img{
+        height: 40%;
+        width: auto;
+       
+    }
     .poster {
-        display: none;
+        margin-top: 25px;
+        height: 300px;
+        border: none;
+        width: 100%;
     }
     .form {
         height: 70%;
@@ -225,8 +265,19 @@ and (max-device-width: 400px) {
     .regis-header {
         height: 60px;
     }
+    .payment-pict{
+        align-items: center;
+    }
+    .payment-pict img{
+        height: 40%;
+        width: auto;
+       
+    }
     .poster {
-        display: none;
+        margin-top: 50px;
+        height: 250px;
+        border: none;
+        width: 100%;
     }
     .form {
         height: 70%;

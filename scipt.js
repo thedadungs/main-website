@@ -16,6 +16,8 @@ function myFunction() {
     header.classList.remove("sticky");
   } else if (window.pageYOffset == infoSticky) {
     header.classList.remove("sticky");
+  } else if (window.pageYOffset == memberSticky) {
+    header.classList.remove("sticky");
   } else {
     header.classList.add("sticky");
   }

@@ -20,7 +20,7 @@
             <div class="registration">
                 <div class="poster">
                     <div class="inside-poster">
-                        <h1>Cara Pembayaran</h1>
+                        <h1>Metode Pembayaran</h1>
                         <div class="payment-pict">
                             <img src="/assets/photo/shopee.png">
                             <img src="/assets/photo/ovo.png">
@@ -38,53 +38,44 @@
                                     Silahkan begabung ke dalam grup telegram <a id="grup-tele" href="https://t.me/joinchat/e-eauG9WbJs4NzE1">klik disini</a>
                                 </p>
                             </div>                        
-                            <i class="fas fa-user" id="fas"></i>
-                            <input type="text" name="username" id="username" oninvalid="('Please input your name correctly.')" placeholder="Nama"required/>
-                            <div class="error-message">
-                                <p class="fill-message">Harus diisi</p>
-                                <p class="wrong-message">$</p>
-                            </div>
-                            <i class="fas fa-graduation-cap" id="fas"></i>
-                            <input type="text" name="school" id="school" placeholder="Asal Sekolah"required/>
-                            <div class="error-message">
-                                <p class="fill-message">Harus diisi</p>
-                                <p class="wrong-message">$</p>
-                            </div>
-                            <i class="fas fa-envelope"id="fas"></i>
-                            <input type="email" name="email" id="email"  
-                            placeholder="Alamat Email"required/>
-                            <div class="error-message">
-                                <p class="fill-message">Harus diisi</p>
-                                <p class="wrong-message">Email tidak valid</p>
-                            </div>
-                            <i class="fas fa-phone-square-alt"id="fas" ></i>
-                            <input type="tel" minlength="11" name="phone" id="phone" onkeypress="return onlyNumber(event)" pattern="\+?([ -]?\d+)+|\(\d+\)([ -]\d+)" class="noscroll" placeholder="No HP " required/>
-                            <div class="error-message">
-                                <p class="fill-message">Harus diisi</p>
-                                <p class="wrong-message">Nomor tidak valid</p>
-                            </div>
+                            <section>
+                                <i class="fas fa-user" id="fas"></i>
+                                <input type="text" name="username" id="username" oninvalid="('Please input your name correctly.')" placeholder="Nama"required/>
+                            </section>
+                            <section>
+                                <i class="fas fa-graduation-cap" id="fas"></i>
+                                <input type="text" name="school" id="school" placeholder="Asal Sekolah"required/>
+                            </section>
+                            <section>
+                                <i class="fas fa-envelope"id="fas"></i>
+                                <input type="email" name="email" id="email"  
+                                placeholder="Alamat Email"required/>
+                            </section>
+                            <section>
+                                <i class="fas fa-phone-square-alt"id="fas" ></i>
+                                <input type="tel" minlength="11" name="phone" id="phone" onkeypress="return onlyNumber(event)" pattern="\+?([ -]?\d+)+|\(\d+\)([ -]\d+)" class="noscroll" placeholder="No HP " required/>
+                            </section>
                             <div class="prove">Metode Pembayaran</div>
-                            <!-- option select -->
-                            <select name="payment" id="payment" required>
-                                <option value="" >-- Pilih Satu --</option>
-                                <option value="ovo">OVO</option>
-                                <option value="shopeepay">Shopeepay</option>
-                                <option value="bni">Bank BNI</option>
-                            </select>
-                            <div class="error-message">
-                                <p class="fill-message">Pilih metode pembayaran</p>
-                            </div>
+                            <section id="prove">
+                                <!-- option select -->
+                                <select name="payment" id="payment" required>
+                                    <option value="" >-- Pilih Satu --</option>
+                                    <option value="ovo">OVO</option>
+                                    <option value="shopeepay">Shopeepay</option>
+                                    <option value="bni">Bank BNI</option>
+                                </select>
+                            </section>
                             <div class="prove">Bukti Transfer</div>
-                            <input type="file" name="filename" id="bukti" onchange="LoadFile(event)"accept="image/gif,image/png, image/jpg, image/jpeg" required/>
-                            <input type="hidden" id="fileData" name="fileData" />
-                            <input type="hidden" id="mimeType" name="mimeType" />
-                            <input type="hidden" id="fileName" name="fileName" />
-                            <div class="error-message">
-                                <p class="fill-message">Masukkan bukti pembayaran</p>
-                                <p class="wrong-message">Masukkan file .jpg .jpeg .png</p>
-                            </div>
-                            <button class="submit" type="submit" name="submit" id="submit">Submit</button>  
-                            <div class="lds-dual-ring loading active"></div>
+                            <section id="prove">
+                                <input type="file" name="filename" id="bukti" onchange="LoadFile(event)"accept="image/gif,image/png, image/jpg, image/jpeg" required/>
+                                <input type="hidden" id="fileData" name="fileData" />
+                                <input type="hidden" id="mimeType" name="mimeType" />
+                                <input type="hidden" id="fileName" name="fileName" />
+                            </section>
+                            <section>
+                                <button class="submit" type="submit" name="submit" id="submit">Submit</button>  
+                                <div class="lds-dual-ring loading active"></div>
+                            </section>
                         </form>
                     </div>
                 </div>              

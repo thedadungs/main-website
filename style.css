@@ -10,7 +10,7 @@
 header {
     height: 60px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
     padding: 0 100px;
     z-index: 10;
@@ -44,7 +44,7 @@ header {
 
 .right-header li .button {
     color: rgb(243, 243, 243);
-    margin-left: 20px;
+    margin-right: 0px;
     border: 1px solid white;
     border-radius: 5px;
     border-style: none;
@@ -133,7 +133,7 @@ body.active {
     top: 100vh;
     color: #010101;
     background-color: rgba(11, 204, 204, 0.322);
-    padding-top: 25px;
+    overflow: auto;
 }
 
 /* .upcoming .event {
@@ -160,6 +160,7 @@ body.active {
     color: rgb(0, 0, 0);
     margin-bottom: 75px;
     padding-bottom: 20px;
+    padding-top: 25px;
 }
 .event img {
     width: 25%;
@@ -172,14 +173,39 @@ body.active {
     transform: scale(1.1) translate(0,-5%);
 }
 
-.event-info a {
+.event-info p {
     color: rgb(85, 83, 83);
-    line-height: 30px;
+    line-height: 20px;
     text-decoration: none;
 }
-.event-info a:hover {
+.event-info p:hover {
     color: rgb(4, 9, 70);
     text-decoration: snow;
+}
+.event-info a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: .7em;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    line-height: 50px;
+}
+
+.event-info .button {
+    color: rgb(243, 243, 243);
+    border: 1px solid white;
+    border-radius: 5px;
+    border-style: none;
+    padding:5px 10px;
+    font-weight: 600;
+    background-image: linear-gradient(to left top, #012c6b, #004d7a, #00bf72);
+    box-shadow: 0 0 3px 3px rgba(94, 55, 55, 0.315) ;
+    cursor: pointer;
+}
+.event-info .button:hover {
+    background-image: linear-gradient(to right top, #051937, #002d47,  #008852);
+    transition: 400ms ease;
 }
 
 /* member */
@@ -191,13 +217,13 @@ body.active {
     width: 100%;
     text-align: center;
     padding-bottom: 20px;
-    padding-top: 10px;
+    
 }
 .member .head {
     font-size: 18px;
     border-bottom: 3px solid black;
     width: 70%;
-    margin: 50px auto 0 auto;
+    margin: 25px auto 0 auto;
     color: rgb(0, 0, 0);
     margin-bottom: 75px;
     padding-bottom: 20px;

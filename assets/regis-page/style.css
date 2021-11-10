@@ -22,15 +22,15 @@
     background-color: black;
     height: 80%;
     background-color: rgba(134, 134, 134, 0.6);
-
+    overflow: auto;
 }
 /* right body */
 .poster{
     width: 50%;
     height: 100%;
-    float: right;
-    border-left: 3px solid white;
-    
+    float: right;    
+        border-left: 3px solid white;
+
 }
 .inside-poster {
     max-height: 91%;
@@ -62,7 +62,6 @@
     grid-template-columns: repeat(3, 1fr);
     align-content: center;    
     justify-content: center;
-
 }
 
 /* left body */
@@ -72,7 +71,6 @@
     float: left;
     display: flex;
     justify-content: center;   
-    margin-top: 15px;
     max-width: 50%;
 }
 /* form header */
@@ -119,30 +117,48 @@ form{
     color: #58493f;
     font-size: 24px;
     margin-bottom: 15px;
-    margin-top: 10px;
     padding-left: 10px;
+    margin-top: 25px;
+
 }
 .form input {
     width: 90%;
     padding: 0 30px 5px;
     font-size: 16px;
     border: none;
-    border-bottom: 1px solid #141E75;
     outline: none;
     background-color: rgba(134, 134, 134, 0);
     color: #fff;
+    border-bottom: 1px solid #141E75;
+    position: relative;
+    left: -25px;
 }
 #fas {
-    position: absolute;
+    color: white;
+    max-width: 50%;
+    width: 5%;
+    /* border-bottom: 1px solid #141E75; */
+}
+section {
+    margin-bottom: 25px;
+    width: 100%;
+    display: flex;
+    /* border-bottom: 1px solid #141E75; */
+}
+section i {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    max-width: 50%;
 }
-.form input:focus {
+
+#prove  {
+    margin-top: 0;
+}
+
+input:focus{
     border-bottom: 1px solid #EEEEEE;
 }
+
 
 .form .submit {
     width: 90%;
@@ -168,15 +184,10 @@ form{
     font-weight: 600;
 }
 #bukti {
-    padding: 0 0 5px;
+    padding: 0 5px 5px;
+    width: 90%;
+    margin: auto;
 }
-.error-message {
-    font-size: 12px;
-    color: #ff0000;
-    text-align: start;
-    visibility: hidden;
-}
-
 .form select {
     border-radius: 5px;
     height: 25px;
@@ -200,7 +211,7 @@ input[type="number"] {
     background-color: #64c764;
     padding: 10px 0;
     border-radius: 10px;
-    margin: 0 0 15px 0;
+    margin: 15px 0 15px 0;
     width: 90%;
     box-shadow: 0 0 5px 2px black;
     display: flex;
